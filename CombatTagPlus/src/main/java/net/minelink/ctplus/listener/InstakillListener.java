@@ -46,7 +46,7 @@ public class InstakillListener implements Listener {
 		}
 	}
 	
-	@EventHandler
+	@EventHandler(priority = EventPriority.HIGHEST)
 	private void on(PlayerDeathEvent event) {
 		Player player = event.getEntity();
 		
